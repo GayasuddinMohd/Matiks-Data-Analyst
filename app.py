@@ -4,7 +4,8 @@ import plotly.express as px
 from datetime import datetime
 
 # Load data
-df = pd.read_excel("https://github.com/GayasuddinMohd/Matiks-Data-Analyst/blob/main/Matiks%20-%20Data%20Analyst%20Data.xlsx")
+df = pd.read_excel("https://raw.githubusercontent.com/GayasuddinMohd/Matiks-Data-Analyst/main/Matiks%20-%20Data%20Analyst%20Data.xlsx", engine='openpyxl')
+
 
 # Preprocess dates
 df['Signup_Date'] = pd.to_datetime(df['Signup_Date'])
